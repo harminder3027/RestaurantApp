@@ -1,0 +1,23 @@
+<table class="table">
+  <thead>
+    <br />
+    <br />
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">EmailId</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let restro of data">
+      <td>{{restro.id}}</td>
+      <td>{{restro.title}}</td>
+      <td>{{restro.address}}</td>
+      <td>{{restro.emailId}}</td>
+      <td><a routerLink="/update/{{restro.id}}"><i class="fa fa-edit" style="font-size:30px;color:blueviolet"></i></a>&nbsp; &nbsp;<i class="fa fa-trash-o" style="font-size:30px;color:black"></i></td>
+    </tr>
+    
+  </tbody>
+</table>
