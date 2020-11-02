@@ -37,6 +37,9 @@ export class CommonService {
     return this._http.post(this.UserURL, data);
 
   }
+  deleteById(id) {
+    return this._http.delete(`${this.URL}/${id}`);
+  }
 
 
 }

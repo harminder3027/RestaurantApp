@@ -18,4 +18,9 @@ export class ListRestaurantComponent implements OnInit {
     
   }
 
+  deleteById(id) {
+    this.commonService.deleteById(id).subscribe((result) => {
+      console.log("deleted", id);
+    })
+  }
 }
